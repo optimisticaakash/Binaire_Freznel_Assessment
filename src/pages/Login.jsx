@@ -30,7 +30,19 @@ const Login = () => {
   return (
     <div className="page-transition flex min-h-screen items-center justify-center bg-[#1b2838] px-6 text-white">
       <div className="w-full max-w-md bg-[#16202d] p-8">
-        <h1 className="text-3xl font-semibold">Sign In</h1>
+        <div className="mb-6 text-center">
+          <Link
+            to="/"
+            className="text-3xl font-bold tracking-wide"
+            aria-label="MovieStore home"
+          >
+            🎬 <span className="text-gray-200">MOVIE</span>
+            <span className="text-[#66c0f4]">STORE</span>
+          </Link>
+
+          <h1 className="mt-6 text-2xl font-semibold">Sign In</h1>
+        </div>
+        
 
         <form onSubmit={handleSubmit} className="mt-8 space-y-5">
           <div>
